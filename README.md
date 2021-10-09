@@ -4,7 +4,7 @@ Extract the top batsmen and bowler in the IPL season using Hadoop Map-Reduce
 -----Algorithm to generate batsman vulnerability----- 
 
 files = os.listdir('ipl_csv') 
-colnames = ['ball','innings_number','over and ball','Batting Team Name','Batsman','nonstriker','Bowler','runs-off bat','extras','kind_of_wicket','dismissed_player_name'] 
+colnames = ['ball','innings_number','over and ball','Batting Team Name','Batsman','non-striker','Bowler','runs-off bat','extras','kind_of_wicket','dismissed_player_name'] 
 not_wanted = ['version','info'] 
 wicket_type = ['caught','bowled','lbw','stumped','caught and bowled'] 
 Batsman_vul_dict={} 
@@ -42,7 +42,7 @@ print(Most_vul)
 
 files = os.listdir('ipl_csv') 
 files.remove('README.txt') 
-colnames = ['ball','innings_number','over and ball','Batting Team Name','Batsman','nonstriker','Bowler','runs-off bat','extras','kind_of_wicket','dismissed_player_name'] 
+colnames = ['ball','innings_number','over and ball','Batting Team Name','Batsman','non-striker','Bowler','runs-off bat','extras','kind_of_wicket','dismissed_player_name'] 
 not_wanted = ['version','info'] 
 Bowler_dict={} 
 for file in files: 
@@ -73,3 +73,5 @@ Bowler_vul.reverse()
 Most_vul = Bowler_vul[0] 
 print(Most_vul)
 ```
+
+Dataset - https://www.kaggle.com/miner16078/ipl-dataset-yaml-format
