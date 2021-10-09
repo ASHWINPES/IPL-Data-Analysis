@@ -1,6 +1,6 @@
 # IPL-Data-Analysis
 Extract the top batsmen and bowler in the IPL season using Hadoop Map-Reduce
-
+```
 -----Algorithm to generate batsman vulnerability----- 
 
 files = os.listdir('ipl_csv') 
@@ -72,3 +72,4 @@ Bowler_vul.sort()
 Bowler_vul.reverse() 
 Most_vul = Bowler_vul[0] 
 print(Most_vul)
+```
